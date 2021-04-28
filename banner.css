@@ -38,11 +38,54 @@ header {
 
 .contact {
   background-color: whitesmoke;
+  width: 100vw;
+  padding: 50px;
 }
 
 .contact .contact-title {
-  width: 100vw;
   text-align: center;
+  width: 100%;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-type {
+  text-align: center;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-type .contact-icon {
+  margin-left: 5px;
+}
+
+.contact-type a {
+  text-align: center;
+  color: #383838;
 }
 
 ::-moz-selection {
@@ -133,6 +176,7 @@ span {
   color: black;
   text-align: center;
   font-size: 60px;
+  margin: 50px;
 }
 
 .instagram-icon {
@@ -228,6 +272,14 @@ span {
 }
 
 @media only screen and (max-width: 700px) {
+  .contact-form {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contact-type {
+    margin: 20px;
+    font-size: 18px;
+  }
   h1 {
     font-size: 65px;
   }
