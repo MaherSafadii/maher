@@ -83,7 +83,7 @@ span {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: 100%;
+  width: 100vw;
   padding: 30px;
   background-color: white;
   margin: 0px;
@@ -137,7 +137,7 @@ img {
           filter: drop-shadow(0px 0px 20px #e0e0e0);
   border-radius: 20px;
   padding: 40px;
-  height: 40vh;
+  height: 45vh;
   width: 32%;
   margin-bottom: 2%;
   /* (100-32*3)/2 */
@@ -146,17 +146,19 @@ img {
 .service h2 {
   font-size: 35px;
   resize: horizontal;
+  text-align: center;
 }
 
 .service h3 {
   font-size: 28px;
+  text-align: center;
 }
 
 .service-icon,
 .phone-transfer {
-  position: absolute;
-  left: 40px;
-  bottom: 40px;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .android-context {
@@ -165,22 +167,14 @@ img {
   padding: 20px;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1313px) {
   .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
   .service {
     width: 45vw;
-    margin: 10px;
   }
 }
 
@@ -198,6 +192,11 @@ img {
     width: 85vw;
     margin: 20px;
   }
+  .service h2,
+  .service h3 {
+    position: relative;
+    top: 40px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -213,9 +212,6 @@ img {
   header {
     height: 70vw;
   }
-  .service {
-    height: 45vh;
-  }
   .android-context {
     font-size: 20px;
   }
@@ -228,8 +224,8 @@ img {
   .secondary-title {
     font-size: 19px;
   }
-  .phone-transfer {
-    bottom: 65px;
+  .service {
+    height: 58vh;
   }
 }
 /*# sourceMappingURL=banner.css.map */
